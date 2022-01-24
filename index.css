@@ -9,6 +9,7 @@ html {
 --black:#0E050F;
 --purple:#341948;
 --haze:#9388A2;
+--green:#c4a919
 }
 *{
     margin: 0;
@@ -19,7 +20,9 @@ body{
 background-image: linear-gradient(105deg,var(--darkblue),var(--black),var(--darkblue),var(--black));
 background-size: 300%;
 animation: bg-animation 20s infinite alternate;
-color: var(--haze);
+color: var(--green);
+font-family: 'Roboto Mono';
+
 }
 
 @keyframes bg-animation {
@@ -39,6 +42,8 @@ color: var(--haze);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 /*Nav Section */
 .headerSection{
@@ -47,8 +52,13 @@ color: var(--haze);
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    
+    /* background-color: #6c6c6c2b; */
+    background-image: linear-gradient(120deg,#170b3ba6,#0e050fbd);
+    background-size: 300%;
+    animation: bg-animation 10s infinite alternate;
+
 }
+
 .menuItems{
     /* background-color: #382933; */
     /* border-bottom: 1px solid #eeee; */
@@ -67,15 +77,15 @@ color: var(--haze);
     font-size: 18px;
 }
 .menuItems ul li a{
-    color: #e2e1e1;
+    color: var(--green);
 text-decoration: none;
 font-family: 'Roboto Mono', monospace;
 font-size: 1.5rem;
 }
 .logo{
     /* font-family: 'Sedgwick Ave', cursive; */
-    font-family: 'Merriweather', serif;
-    font-size: 3rem;
+    /* font-family: 'Merriweather', serif; */
+    font-size: 2rem;
 }
 .resume{
     font-family: 'Roboto Mono', monospace;
@@ -83,14 +93,15 @@ font-size: 1.5rem;
     background-image: linear-gradient(105deg,var(--darkblue),var(--black),var(--darkblue));
     padding: 1rem 2rem;   
     border-radius: 10px;
-    margin: 1rem;
+    margin: 1rem 0;
+    width: 90px;
 }
 
 .myName{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     width: 90%;
     margin: 1rem auto;
     height: 700px;
@@ -101,18 +112,23 @@ font-size: 1.5rem;
 }
 .myName p{
     font-size: 4rem;
-    text-align: center;
+    text-align: left;
+    /* transition: all ease-in 5s; */
+}
+.sectionSubheading{
+    color: var(--haze);
 }
 /*About*/
 .aboutSection{
     padding-top: 60px;
     text-align: center;
+
 }
 .aboutHeading,.projectHeading,.contactHeading{
 font-size: 60px;
 margin:10px 0px;
 /* font-size: 72px; */
-background: -webkit-linear-gradient(90deg,var(--haze),var(--purple));
+background: -webkit-linear-gradient(95deg,var(--green),var(--purple));
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 } 
@@ -139,7 +155,7 @@ background: -webkit-linear-gradient(90deg,var(--haze),var(--purple));
 .detailsAboutMe{
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 20px;
+    padding: 3rem 2rem;
 }
 .whoAMI,.myTechSection{
     flex-basis: 50%;
@@ -147,6 +163,13 @@ background: -webkit-linear-gradient(90deg,var(--haze),var(--purple));
 .whoAMI>img{
     height: 40%;
     border-radius: 40px 60px;
+}
+.whoAmIDetails{
+    padding: 2rem 5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: left;
+    font-family: 'Roboto Mono';
 }
 .whoAmIHeading,.myTechSectionHeading{
     font-size: 2rem;
@@ -173,6 +196,9 @@ transition: all ease 0.5s;
 }
 .singletech img{
     width: 20%;
+}
+.singletech h4{
+    padding: 5px;
 }
 /* Project*/
 .hide{
