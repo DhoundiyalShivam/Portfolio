@@ -10,30 +10,32 @@
 <body>
     <div class="container">
         <div class="heroSection">
-            <nav class="headerSection">
-                <div class="logo">
-                    <img
-                        src="https://cdn-icons.flaticon.com/png/512/3242/premium/3242257.png?token=exp=1643101655~hmac=694007811a25c661be9569fb4fe99599">
-                    <p class="logoText">
-                        <!-- < SD > -->
-                        SHIVAM DHOUNDIYAL
-                    </p>
+            <div class="navSticky">
+                <div class="headerSection">
+                    <div class="logo">
+                        <img
+                            src="https://cdn-icons.flaticon.com/png/512/3242/premium/3242257.png?token=exp=1643101655~hmac=694007811a25c661be9569fb4fe99599">
+                        <p class="logoText">
+                            <!-- < SD > -->
+                            SHIVAM DHOUNDIYAL
+                        </p>
+                    </div>
+                    <div class="menuItems">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div>
+    
+                        <p class="logo">
+                            < SD />
+                        </p>
+                    </div> -->
                 </div>
-                <div class="menuItems">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- <div>
-
-                    <p class="logo">
-                        < SD />
-                    </p>
-                </div> -->
-            </nav>
+            </div>
             <div class="myName">
                 <p>Hello World!<br />Shivam Dhoundiyal<br />A Front-End Developer</p>
                 <div class="resume">Resume</div>
@@ -42,12 +44,13 @@
         <div class="aboutSection" id="about">
             <div>
                 <p class="aboutHeading">
-                    < ABOUT>
+                    < ABOUT >
                 </p>
                 <!-- <p>I make website that are</p> -->
                 <p class="sectionSubheading">
                     <!-- Every thing is imposible until its done -->
-                    You are never too old to set another goal or to dream a new dream.
+                    You are never too old to set another goal.
+                     <!-- or to dream a new dream. -->
                 </p>
             </div>
 
@@ -55,22 +58,23 @@
                 <div class="whoAMI">
 
                     <h3>
-                        < My Story>
+                        < My Story >
                     </h3>
                     <p class="whoAmIDetails">
-                        I graduated with my MCA degree in 2020 from lal bahadur shastri institute of management new
-                        delhi learning did not stop there as I am still
-                        learning many things daily and adding it to my skills.<br />
-                        Curently I am working as Front-End web developer with pennyworth wiz pvt ltd since October 2020
-                        also I have worked as a web developer intern with WebShringar pvt ltd. from july 2019- september
+
+                        Currently I am working as Front-End web developer with pennyworth wiz pvt ltd since October 2020
+                        also I have worked as a web developer intern with WebShringar pvt ltd. from July 2019- September
                         2019<br />
+                        I graduated with my MCA degree in 2020 from Lal Bahadur shastri Institute of Management New
+                        Delhi. Learning did not stop there as I am still learning many things daily and adding it to my
+                        skills.<br />
                         <!-- I love problem solving with optimal solution. -->
                     </p>
                 </div>
                 <div class="myTechSection">
 
                     <h3>
-                        < My Stack>
+                        < My Stack >
                     </h3>
 
                     <div class='myStack'>
@@ -122,26 +126,30 @@
         </div>
         <div class="projectSection" id="projects">
             <p class="projectHeading">
-                < Project>
+                < Project >
             </p>
             <p class="sectionSubheading">A little progress each day adds up to big results</p>
             <div class="projectsList">
                 <ul>
-                    <li onclick='allProjects("all")'>All</li>
-                    <li onclick='allProjects("htmlCss")'>HTML/CSS</li>
-                    <li onclick='allProjects("js")'>JavaScript</li>
-                    <li onclick='allProjects("react")'>React</li>
+                    <li onclick='allProjects("all")' id="allLink">All</li>
+                    <li onclick='allProjects("htmlCss")' id="htmlCssLink">HTML/CSS</li>
+                    <li onclick='allProjects("js")' id="jsLink">JavaScript</li>
+                    <li onclick='allProjects("react")' id="reactLink">React</li>
                 </ul>
             </div>
-            <div id="all" class="display hide">
-                <h1> All</h1>
+            <div id="all" class="display hide ">
+                <!-- <h1> All</h1> -->
                 <div class="singleProject">
                     <div class="projectImg">
                         <img src="./images/my.jpg" alt="projectImg" />
                     </div>
                     <div class="projectContent">
                         <h3>Project 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta, vero omnis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores
+                            deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus
+                            reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores
+                            adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta,
+                            vero omnis!</p>
                         <div class='projectsLinks'>
                             <a href=''> Live Project</a>
                             <a href=''>
@@ -150,10 +158,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="singleProject">
+                <div class="singleProject2">
                     <div class="projectContent2">
                         <h3>Project 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta, vero omnis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores
+                            deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus
+                            reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores
+                            adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta,
+                            vero omnis!</p>
                         <div class='projectsLinks'>
                             <a href=''> Live Project</a>
                             <a href=''>
@@ -164,7 +176,7 @@
                     <div class="projectImg">
                         <img src="./images/my.jpg" alt="projectImg" />
                     </div>
-               
+
                 </div>
                 <div class="singleProject">
                     <div class="projectImg">
@@ -172,7 +184,11 @@
                     </div>
                     <div class="projectContent">
                         <h3>Project 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta, vero omnis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores
+                            deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus
+                            reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores
+                            adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta,
+                            vero omnis!</p>
                         <div class='projectsLinks'>
                             <a href=''> Live Project</a>
                             <a href=''>
@@ -181,10 +197,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="singleProject">
+                <div class="singleProject2">
                     <div class="projectContent2">
                         <h3>Project 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta, vero omnis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores
+                            deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus
+                            reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores
+                            adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta,
+                            vero omnis!</p>
                         <div class='projectsLinks'>
                             <a href=''> Live Project</a>
                             <a href=''>
@@ -195,18 +215,66 @@
                     <div class="projectImg">
                         <img src="./images/my.jpg" alt="projectImg" />
                     </div>
-               
+
                 </div>
             </div>
             <div id="htmlCss" class="hide">
-                <h1> HTML/CSS</h1>
-                <div class="singleProject">
+                <!-- <h1> HTML/CSS</h1> -->
+                <div class="htmlCssProject">
+                    <div class="htmlPorjectCard">
+                        <div class="htmlProjectCardImg">
+                            <img src="./images/my.jpg" alt="projectImg" />
+                        </div>
+                        <div class="htmlProjectContent">
+                            <h3>Project 1</h3>
+                            <div class="projectTechnology"> 
+                                <p>HTML</p>
+                                <p>CSS</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores
+                                deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus
+                            </p>
+                            <div class='htmlCssLinks'>
+                                <a href=''> Live Project</a>
+                                <a href=''>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="htmlPorjectCard">
+                        <div class="htmlProjectCardImg">
+                            <img src="./images/my.jpg" alt="projectImg" />
+                        </div>
+                        <div class="htmlProjectContent">
+                            <h3>Project 1</h3>
+                            <div class="projectTechnology"> 
+                                <p>HTML</p>
+                                <p>CSS</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores
+                                deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus
+                            </p>
+                            <div class='htmlCssLinks'>
+                                <a href=''> Live Project</a>
+                                <a href=''>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="singleProject">
                     <div class="projectImg">
                         <img src="./images/my.jpg" alt="projectImg" />
                     </div>
                     <div class="projectContent">
                         <h3>HTML/CSS</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta, vero omnis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores
+                            deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus
+                            reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores
+                            adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta,
+                            vero omnis!</p>
                         <div class='projectsLinks'>
                             <a href=''> Live Project</a>
                             <a href=''>
@@ -215,10 +283,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="singleProject">
+                <div class="singleProject2">
                     <div class="projectContent2">
                         <h3>HTML/CSS</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta, vero omnis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores
+                            deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus
+                            reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores
+                            adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta,
+                            vero omnis!</p>
                         <div class='projectsLinks'>
                             <a href=''> Live Project</a>
                             <a href=''>
@@ -229,18 +301,22 @@
                     <div class="projectImg">
                         <img src="./images/my.jpg" alt="projectImg" />
                     </div>
-               
-                </div>
+
+                </div> -->
             </div>
             <div id="js" class="hide">
-                <h1> JavaScript</h1>
+                <!-- <h1> JavaScript</h1> -->
                 <div class="singleProject">
                     <div class="projectImg">
                         <img src="./images/my.jpg" alt="projectImg" />
                     </div>
                     <div class="projectContent">
                         <h3>JavaScript</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta, vero omnis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores
+                            deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus
+                            reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores
+                            adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta,
+                            vero omnis!</p>
                         <div class='projectsLinks'>
                             <a href=''> Live Project</a>
                             <a href=''>
@@ -249,10 +325,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="singleProject">
+                <div class="singleProject2">
                     <div class="projectContent2">
                         <h3>JavaScript</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta, vero omnis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores
+                            deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus
+                            reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores
+                            adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta,
+                            vero omnis!</p>
                         <div class='projectsLinks'>
                             <a href=''> Live Project</a>
                             <a href=''>
@@ -263,18 +343,22 @@
                     <div class="projectImg">
                         <img src="./images/my.jpg" alt="projectImg" />
                     </div>
-               
+
                 </div>
             </div>
             <div id="react" class="hide">
-                <h1> React</h1>
+                <!-- <h1> React</h1> -->
                 <div class="singleProject">
                     <div class="projectImg">
                         <img src="./images/my.jpg" alt="projectImg" />
                     </div>
                     <div class="projectContent">
                         <h3>React</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta, vero omnis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores
+                            deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus
+                            reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores
+                            adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta,
+                            vero omnis!</p>
                         <div class='projectsLinks'>
                             <a href=''> Live Project</a>
                             <a href=''>
@@ -283,10 +367,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="singleProject">
+                <div class="singleProject2">
                     <div class="projectContent2">
                         <h3>React</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta, vero omnis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda iste a, maiores
+                            deleniti velit architecto aperiam nemo doloremque? Quod provident ut hic ducimus
+                            reprehenderit voluptates minima quam consequuntur sed inventore qui animi dolor maiores
+                            adipisci saepe ex, velit minus pariatur neque alias repellendus optio autem dolorum. Dicta,
+                            vero omnis!</p>
                         <div class='projectsLinks'>
                             <a href=''> Live Project</a>
                             <a href=''>
@@ -297,7 +385,7 @@
                     <div class="projectImg">
                         <img src="./images/my.jpg" alt="projectImg" />
                     </div>
-               
+
                 </div>
             </div>
         </div>
