@@ -8,8 +8,24 @@ let jsLink = document.getElementById('jsLink')
 let reactLink = document.getElementById('reactLink')
 let header = document.querySelector('.headerSection')
 let heroSection = document.querySelector('.heroSection')
-console.log(heroSection)
+let helloWorld=document.querySelector('.helloWorld')
+let backToTop = document.querySelector('.backToTop')
+console.log(backToTop)
+let s = 'Hello World!'
+let idx=1
+writeText()
+function writeText(){
+    helloWorld.textContent = s.slice(0,idx)
 
+    idx++;
+
+    if(idx>s.length){
+        idx=1
+        // idx--
+    }
+
+    setTimeout(writeText,500)
+}
 window.addEventListener('scroll', function () {
     // if(window.scrollY > 50){
 
@@ -18,7 +34,7 @@ window.addEventListener('scroll', function () {
     if (window.scrollY > 0) {
 
         heroSection.style.backgroundSize = `103% `
-
+        
         if (window.scrollY > 700) {
             header.classList.remove("headerSection")
             header.classList.add("navScrollColor")
@@ -27,6 +43,7 @@ window.addEventListener('scroll', function () {
 
     } else {
         heroSection.style.backgroundSize = '100%'
+        backToTop.style.opacity=0;
 
         header.classList.add("headerSection")
         header.classList.remove("navScrollColor")

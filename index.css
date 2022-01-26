@@ -57,7 +57,7 @@ font-family: 'Roboto Mono';
     background-image: linear-gradient(120deg,#170b3ba6,#0e050fbd);
     background-size: 300%;
     animation: bg-animation 10s infinite alternate;
-    transition: all 0.5s ease-in-out;
+    /* transition: all 0.5s ease-in-out; */
 
 }
 .navSticky{
@@ -75,7 +75,7 @@ font-family: 'Roboto Mono';
     background-color: #000000d1;
     /* background-color: #6c6c6c2b; */
 
-    transition: all 0.5s ease-in-out;
+    /* transition: all 0.5s ease-in-out; */
 
 }
 .menuItems{
@@ -125,6 +125,7 @@ margin-right: 10px;
     width: 90px;
     font-weight: 600;
     cursor: pointer;
+    text-decoration: none;
 }
 .resume:hover{
     background-image: linear-gradient(105deg,var(--haze),var(--green));
@@ -143,11 +144,18 @@ margin-right: 10px;
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat; */
+
 }
-.myName p{
+.helloWorld,.name{
+    font-size: 3.4rem;
+    padding: 0.5rem 0;
+    transition: all ease-in 1s;
+
+}
+.myProfession{
     font-size: 4rem;
-    text-align: left;
-    /* transition: all ease-in 5s; */
+    padding: 0.5rem 0;
+    transition: all ease-in 1s;
 }
 .sectionSubheading{
     color: var(--haze);
@@ -324,12 +332,14 @@ padding-top: 1rem;
 }
 
 .projectsLinks a{
-    text-decoration: none;
-    background-color: #0e00009e;
-    color: #eeee;
+    font-family: 'Roboto Mono', monospace;
+     text-decoration: none;
+    color: var(--black);
+    background-image: linear-gradient(105deg,var(--green),var(--haze));
+    border-radius: 10px;
     padding: 2px 5px;
-    border: none;
-    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
 }
 .htmlCssProject{
     display: flex;
@@ -338,6 +348,11 @@ padding-top: 1rem;
 }
 .htmlProjectCardImg img{
     max-width: 100%;
+transition: transform 1s ease-in;
+}
+.htmlProjectCardImg img:hover{
+transform: scale(1.02);
+transition: transform 1s ease-in;
 }
 .htmlPorjectCard{
     width: 50%;
@@ -350,6 +365,9 @@ padding-top: 1rem;
 
 
 }
+.htmlProjectContent{
+    padding: 1rem;
+}
 .htmlPorjectCard:hover{
     box-shadow: 1px 1px 1px 1px var(--green);
     transition: box-shadow ease-in-out 0.5s;
@@ -361,9 +379,10 @@ padding-top: 1rem;
 }
 .projectTechnology p{
     margin: 0 0.5rem;
-    padding: 0.5rem 2rem;
-    background-color: var(--haze);
+    padding: 0.5rem 1rem;
+    background-color: #4e4e4e;
     border-radius: 10px;
+    color: antiquewhite;
 }
 .htmlCssLinks{
     display: flex;
@@ -372,13 +391,23 @@ max-width: 100%;
 padding-top: 1rem;
 }
 .htmlCssLinks a{
-    text-decoration: none;
+    /* text-decoration: none;
     background-color: #4a4a4a;
     color: #eeee;
     padding: 2px 5px;
     border: none;
     border-radius: 5px;
-    margin: 1rem;
+    margin: 1rem; */
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+   color: var(--black);
+   background-image: linear-gradient(105deg,var(--green),var(--haze));
+   border-radius: 10px;
+   padding: 2px 5px;
+   font-weight: 600;
+   cursor: pointer;
+   margin: 1rem;
+
 }
 /*Cntatc me*/
 .contactMeSection{
@@ -392,8 +421,43 @@ padding-top: 1rem;
 }
 .contactMeIcons i{
     margin: 2rem 1rem;
+    cursor: pointer;
 }
 .envelope{
     font-size:5rem;
     margin: 2rem 0;
 }
+.resumeDiv{
+    position: fixed;
+
+    bottom: 60;
+    right: 60;
+    color:var(--green);
+    text-align: center;
+ 
+}
+.resumeDiv img{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+
+}
+/* .backToTop{
+    position: fixed;
+    bottom: 50;
+    right:30;
+    color: var(--green);
+    text-align: center;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 40%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.backToTop i{
+    font-size: 3rem;
+}
+.backToTop img{
+    width: 3rem;
+    color: turquoise;
+} */
