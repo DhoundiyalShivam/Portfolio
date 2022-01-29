@@ -43,10 +43,8 @@ window.addEventListener('scroll', function () {
 
     } else {
         heroSection.style.backgroundSize = '100%'
-        backToTop.style.opacity=0;
-
-        header.classList.add("headerSection")
         header.classList.remove("navScrollColor")
+        header.classList.add("headerSection")
 
     }
 

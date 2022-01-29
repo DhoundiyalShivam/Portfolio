@@ -57,7 +57,7 @@ font-family: 'Roboto Mono';
     background-image: linear-gradient(120deg,#170b3ba6,#0e050fbd);
     background-size: 300%;
     animation: bg-animation 10s infinite alternate;
-    /* transition: all 0.5s ease-in-out; */
+    transition: all 0.5s ease-in-out;
 
 }
 .navSticky{
@@ -75,7 +75,7 @@ font-family: 'Roboto Mono';
     background-color: #000000d1;
     /* background-color: #6c6c6c2b; */
 
-    /* transition: all 0.5s ease-in-out; */
+    transition: all 0.5s ease-in-out;
 
 }
 .menuItems{
@@ -159,6 +159,7 @@ margin-right: 10px;
 }
 .sectionSubheading{
     color: var(--haze);
+    padding: 1rem 2rem;
 }
 /*About*/
 .aboutSection{
@@ -461,3 +462,9 @@ padding-top: 1rem;
     width: 3rem;
     color: turquoise;
 } */
+@media screen and (max-width:780px){
+    .whoAMI, .myTechSection {
+        flex-basis: 100%;
+    }
+    }
+}
