@@ -168,7 +168,7 @@ margin-right: 10px;
 
 }
 .aboutHeading,.projectHeading,.contactHeading{
-font-size: 60px;
+font-size: 4rem;
 margin:10px 0px;
 /* font-size: 72px; */
 background: -webkit-linear-gradient(95deg,var(--green),var(--purple));
@@ -279,10 +279,14 @@ text-align: center;
     transition: all ease-in 0.2s;
 
 }
+.singleProjectOuter{
+    width: 90%;
+    margin: 1rem auto;
+}
 .singleProject{
     display: flex;
-    width: 1100px;
-    margin: 4rem auto;
+    max-width: 100%;
+    margin: 4rem 2rem;
     box-shadow: 1px 1px 1px 1px var(--haze);
     border-radius: 10px;
     padding: 1rem;
@@ -299,8 +303,8 @@ text-align: center;
 }
 .singleProject2{
     display: flex;
-    width: 1100px;
-    margin: 4rem auto;
+    max-width: 100%;
+    margin: 4rem 2rem;
     box-shadow: 1px 1px 1px 1px var(--haze);
     border-radius: 10px;
     padding: 1rem;
@@ -344,6 +348,7 @@ padding-top: 1rem;
 }
 .htmlCssProject{
     display: flex;
+    flex-wrap: wrap;
     width: 85%;
     margin: 4rem auto;
 }
@@ -462,9 +467,58 @@ padding-top: 1rem;
     width: 3rem;
     color: turquoise;
 } */
-@media screen and (max-width:780px){
+/* @media screen and (max-width:780px){
     .whoAMI, .myTechSection {
         flex-basis: 100%;
     }
     }
-}
+} */
+@media screen and (max-width: 600px) {
+    .heroSection {
+      background-attachment: unset;
+    }
+    .myName {
+        height: 360px;
+    }
+    .projectImg img {
+        max-width: 100%;
+    }
+    .singleProject,.singleProject2 {
+        flex-direction: column;
+    }
+    .whoAMI, .myTechSection {
+        flex-basis: 100%;
+    }
+    .whoAmIDetails {
+        padding: 2rem 1rem;
+        text-align: left;
+    }
+    .singletech{
+        width: 100%;
+    }
+    .projectsList ul {
+        flex-direction: column;
+    }
+    .projectsList ul li {
+        margin: 4px 25px;
+    }
+    .helloWorld, .name {
+        font-size: 1.6rem;
+        
+    }
+    .myProfession {
+        font-size: 1.8rem;
+    }
+    .resume {
+        font-size: 1rem;
+        padding: 0.2rem 0.5rem;
+        margin: 1rem 0;
+        width: 70px;
+    }
+    .aboutHeading,.projectHeading,.contactHeading{
+        font-size: 2rem;
+    }
+    .sectionSubheading {
+        font-size: 0.9rem;
+    }
+  }
