@@ -10,7 +10,21 @@ let header = document.querySelector('.headerSection')
 let heroSection = document.querySelector('.heroSection')
 let helloWorld=document.querySelector('.helloWorld')
 let backToTop = document.querySelector('.backToTop')
-console.log(backToTop)
+let hamburger=document.querySelector(".hamburger")
+let navMenu=document.querySelector(".nav-menu")
+let navLink= document.querySelectorAll(".nav-link")
+let mql = window.matchMedia('(max-width: 768px)');
+hamburger.addEventListener("click",()=>{
+    hamburger.classList.toggle("active")
+    navMenu.classList.toggle("active")
+
+})
+navLink.forEach(e=>e.addEventListener('click',()=>{
+    hamburger.classList.remove("active")
+    navMenu.classList.remove("active")
+}))
+
+
 let s = 'Hello World!'
 let idx=1
 writeText()
@@ -31,6 +45,27 @@ window.addEventListener('scroll', function () {
 
     // }
     //   let percentageIncrease =   Math.floor(window.scrollY)/100 + 100
+   if(mql.matches){
+    if (window.scrollY > 0) {
+
+        heroSection.style.backgroundSize = `103% `
+        
+        if (window.scrollY > 300) {
+            header.classList.remove("headerSection")
+            header.classList.add("navScrollColor")
+    
+        }
+
+
+    }
+    else{
+        heroSection.style.backgroundSize = '100%'
+        header.classList.remove("navScrollColor")
+        header.classList.add("headerSection")
+    }
+
+   }
+   else{
     if (window.scrollY > 0) {
 
         heroSection.style.backgroundSize = `103% `
@@ -47,6 +82,7 @@ window.addEventListener('scroll', function () {
         header.classList.add("headerSection")
 
     }
+   }
 
 })
 function removeDisplay() {
