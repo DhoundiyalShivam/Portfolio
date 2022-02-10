@@ -45,6 +45,8 @@ font-family: 'Roboto Mono';
     background-repeat: no-repeat;
     background-attachment: fixed;
     transition:background-size 2s ease-in ;
+    position: relative;
+
 }
 
 /*Nav Section */
@@ -78,6 +80,33 @@ font-family: 'Roboto Mono';
 
     transition: all 0.5s ease-in-out;
 
+}
+.scroll{
+    position: absolute;
+    height: 3rem;
+    width: 1.6rem;
+    border: 2px solid var(--green);
+    left: 50%;
+    bottom: 5%;
+    border-radius: 1rem;
+}
+.scrollDot{
+    height: 10px;
+    width: 10px;
+    transform: translate(6px,5px);
+    animation: scroll 3s linear infinite;
+    background-color: var(--haze);
+    border-radius: 50%;
+}
+@keyframes scroll {
+    0%{
+    transform: translate(6px,5px);
+    }
+    100%{
+        transform: translate(6px,30px);
+
+        opacity: 0.1;
+    }
 }
 .menuItems{
     /* background-color: #382933; */
