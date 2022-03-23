@@ -435,11 +435,12 @@ transition: transform 1s ease-in;
     display: flex;
     justify-content: center;
     margin: 1rem;
+    flex-wrap: wrap;
 }
 .projectTechnologyAll{
     display: flex;
-    /* justify-content: center; */
     margin: 1rem -10px;
+    flex-wrap: wrap;
 }
 .projectTechnology p , .projectTechnologyAll p{
     margin: 0 0.5rem;
@@ -646,5 +647,8 @@ padding-top: 1rem;
 .resumeDiv img {
     height: 70px;
     width: 70px;
+}
+.projectTechnology p , .projectTechnologyAll p{
+    margin: 0.5rem;
 }
   }
