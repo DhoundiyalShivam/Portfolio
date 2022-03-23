@@ -365,6 +365,8 @@ text-align: center;
 .projectImg img{
     border-radius: 10px;
     height: 250px;
+    width: 400px;
+    object-fit: cover;
 }
 .projectContent{
     text-align: justify;
@@ -402,7 +404,9 @@ padding-top: 1rem;
     margin: 4rem auto;
 }
 .htmlProjectCardImg img{
-    max-width: 100%;
+    width: 100%;
+    object-fit: fill;
+    height: 300px;
 transition: transform 1s ease-in;
 }
 .htmlProjectCardImg img:hover{
@@ -432,7 +436,12 @@ transition: transform 1s ease-in;
     justify-content: center;
     margin: 1rem;
 }
-.projectTechnology p{
+.projectTechnologyAll{
+    display: flex;
+    /* justify-content: center; */
+    margin: 1rem -10px;
+}
+.projectTechnology p , .projectTechnologyAll p{
     margin: 0 0.5rem;
     padding: 0.5rem 1rem;
     background-color: #4e4e4e;
