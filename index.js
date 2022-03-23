@@ -87,11 +87,11 @@ window.addEventListener('scroll', function () {
 })
 function removeDisplay() {
     all.classList.remove('display')
-    htmlCss.classList.remove('display')
+    // htmlCss.classList.remove('display')
     js.classList.remove('display')
     react.classList.remove('display')
     allLink.classList.remove('projectLinkBgColor')
-    htmlCssLink.classList.remove('projectLinkBgColor')
+    // htmlCssLink.classList.remove('projectLinkBgColor')
     jsLink.classList.remove('projectLinkBgColor')
     reactLink.classList.remove('projectLinkBgColor')
 
@@ -107,11 +107,11 @@ function allProjects(data) {
         all.classList.add('display')
         allLink.classList.add('projectLinkBgColor')
     }
-    else if (a == 'htmlCss') {
+    // else if (a == 'htmlCss') {
 
-        htmlCss.classList.add('display')
-        htmlCssLink.classList.add('projectLinkBgColor')
-    }
+    //     htmlCss.classList.add('display')
+    //     htmlCssLink.classList.add('projectLinkBgColor')
+    // }
     else if (a == 'js') {
 
         js.classList.add('display')

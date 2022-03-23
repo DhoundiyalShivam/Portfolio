@@ -475,6 +475,7 @@ padding-top: 1rem;
     color: #1b5384;
 }
 .contactMeIcons i{
+    color: var(--green);
     margin: 2rem 1rem;
     cursor: pointer;
 }
@@ -497,6 +498,7 @@ padding-top: 1rem;
     cursor: pointer;
 
 }
+
 /* .backToTop{
     position: fixed;
     bottom: 50;
